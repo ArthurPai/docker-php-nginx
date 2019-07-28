@@ -28,6 +28,8 @@ RUN mkdir -p /var/www/html
 # Add application
 WORKDIR /var/www/html
 
+COPY src/ /var/www/html/public
+
 # Expose the port nginx is reachable on
 EXPOSE 80
 
