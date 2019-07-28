@@ -24,10 +24,10 @@ Repository: https://github.com/ArthurPai/docker-php-nginx
 
 Start the Docker container:
 
-    docker run -p 80:80 arthurpai/alpine-nginx-php7
+    docker run -p 8080:80 arthurpai/alpine-nginx-php7
 
-See the PHP info on http://localhost
+See the PHP info on http://localhost:8080
 
 Or mount your own code to be served by PHP-FPM & Nginx
 
-    docker run -p 80:80 -v ~/my-codebase:/var/www/html arthurpai/alpine-nginx-php7
+    docker run -p 8080:80 -v ~/my-codebase:/var/www/html arthurpai/alpine-nginx-php7
